@@ -1,0 +1,159 @@
+@charset "UTF-8";
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #e3f2fd, #f0f4ff);
+  color: #1a237e;
+}
+
+
+.dashboard-header {
+  background: linear-gradient(to right, #1565c0, #1e88e5);
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.user-info button {
+  background: #fff;
+  color: #1565c0;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.user-info button:hover {
+  background: #bbdefb;
+}
+
+
+.dashboard-container {
+  display: flex;
+}
+
+
+.dashboard-sidebar {
+  width: 220px;
+  background: #0d47a1;
+  color: #fff;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.dashboard-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.dashboard-sidebar li {
+  margin-bottom: 15px;
+}
+
+.dashboard-sidebar a {
+  color: #bbdefb;
+  text-decoration: none;
+  font-weight: 500;
+  display: block;
+  padding: 10px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.dashboard-sidebar a:hover {
+  background: #1976d2;
+  color: #fff;
+}
+
+/* Main content */
+.dashboard-main {
+  flex: 1;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Cards */
+.dashboard-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+}
+
+.dashboard-card h2 {
+  margin-top: 0;
+  color: #1565c0;
+  font-size: 20px;
+}
+
+.dashboard-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.dashboard-card ul li {
+  margin: 10px 0;
+  padding: 10px;
+  background: #e3f2fd;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.dashboard-card ul li:hover {
+  background: #bbdefb;
+}
+
+/* Buttons */
+.edit-btn {
+  background: #1565c0;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.edit-btn:hover {
+  background: #0d47a1;
+}
+
+
+.comparison-table, .recent-searches {
+  font-size: 14px;
+}
+
+.comparison-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.comparison-table th,
+.comparison-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+.comparison-table th {
+  background-color: #e3f2fd;
+  color: #1565c0;
+}

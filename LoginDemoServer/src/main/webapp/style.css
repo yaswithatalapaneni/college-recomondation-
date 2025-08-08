@@ -1,0 +1,46 @@
+body {
+    background-image: url('grad3.jpg');
+    background-repeat: no-repeat;
+    justify-content: center;
+    background-size: cover;
+    background-color: 'rgba(0, 0, 0, 1); /* Adjust opacity (1 = 0% fade)';
+    }
+form{ 
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 400px;
+    border: 1px solid black;
+    align-items: center;
+    margin: auto;
+    margin-top: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    font-size: small;
+    font-display: initial;
+    font-style: italic;
+    font-size: 25px;
+    }
+    form h1{
+        font-style: initial;
+        font-size: 40px;
+        ;
+    }
+input{
+    padding: 10px;
+    margin: 5px;
+    width: 50%;
+    border-radius: 20px;
+    background-color: rgba(191, 17, 17, 0.5);
+    color: rgba(248, 242, 242, 0.958);
+    font-size: 1rem;
+    }    
+button{
+    font-style: italic;
+    font-size: large;
+}    
+p{
+    font-size: small;
+    color: white;
+    
+}

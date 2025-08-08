@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body class="dashboard-body">
+
+  
+  <header class="dashboard-header">
+    <h1 class="logo">CollegeFinder</h1>
+    <div class="user-info">
+      <a href="home.html"><button class="home-btn">Home</button></a>
+    </div>
+  </header>
+
+  <div class="dashboard-container">
+
+
+    <nav class="dashboard-sidebar">
+      <ul>
+        <li><a href="#">Saved Colleges</a></li>
+        <li><a href="#">Recent Searches</a></li>
+        <li><a href="#">Compare Colleges</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </nav>
+
+    
+    <main class="dashboard-main">
+
+      
+      <section class="dashboard-card">
+        <h2>Recommended Colleges</h2>
+        <ul>
+          <li>IIT Bombay</li>
+          <li>VIT Vellore</li>
+          <li>DTU Delhi</li>
+        </ul>
+      </section>
+
+  
+      <section class="dashboard-card">
+        <h2>Recent Searches</h2>
+        <ul id="recent-searches">
+          <li>IIT Madras</li>
+          <li>Anna University</li>
+          <li>NIT Calicut</li>
+        </ul>
+      </section>
+
+
+      <section class="dashboard-card">
+        <h2>Compare Colleges</h2>
+        <form method="post" action="CompareServlet">
+          <input type="text" name="college1" placeholder="Enter first college" required />
+          <input type="text" name="college2" placeholder="Enter second college" required />
+          <button type="submit" class="compare-btn">Compare</button>
+        </form>
+      </section>
+
+      
+      <section class="dashboard-card">
+        <h2>Saved Colleges</h2>
+        <ul>
+          <li>IIT Madras</li>
+          <li>Manipal University</li>
+        </ul>
+      </section>
+
+     
+      <section class="dashboard-card">
+        <h2>Upcoming Deadlines</h2>
+        <ul>
+          <li>IIT Bombay - Apr 30, 2025</li>
+          <li>Anna University - May 10, 2025</li>
+        </ul>
+      </section>
+
+
+      <section class="dashboard-card">
+        <h2>Your Preferences</h2>
+        <p>Stream: Computer Science</p>
+        <p>Region: South India</p>
+        <button class="edit-btn">Edit Preferences</button>
+      </section>
+
+    </main>
+  </div>
+
+</body>
+</html>

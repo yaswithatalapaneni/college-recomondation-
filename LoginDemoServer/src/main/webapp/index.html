@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        #viewerDiv {
+            width: 660px;
+            height: 660px;
+            margin: 100px 0px 0px 0px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Login Page</title>
+</head>
+<body>
+
+    <div style="
+    background-color: transparent;
+    color: rgb(247, 242, 242);
+    text-align: center;
+    justify-content: center">
+    
+        
+        <form action="LoginD" method="post" class="login page"> 
+    <h1>LOGIN</h1>
+
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" id="uname" required>
+    <br>
+
+    <label for="pwd"><b>Password</b></label>
+    <input type="password" placeholder="Enter password" name="pwd" id="pwd" required autocomplete="off">
+    <p>
+        <input type="checkbox">Remember Me<br>
+        <a href="#">Forgot Password?</a>
+    </p>
+
+    <button type="submit">LOGIN</button>
+
+    <p>Don't have an account? <a href="index2.html">Sign Up</a></p>
+</form>
+
+    </div>
+
+</body>
+</html>

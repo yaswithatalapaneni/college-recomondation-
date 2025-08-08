@@ -1,0 +1,79 @@
+<html>
+   <head>
+      <meta name="robots" content="noindex,nofollow" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <style>
+         #viewerDiv {
+            width: 660px;
+            height: 660px;
+            margin: 100px 0px 0px 0px;
+         }
+      </style>
+      <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="style2.css" />
+      <title> Sign Up Page</title>
+      <script src="https://kit.fontawesome.com/97ebdf5864.js" crossorigin="anonymous"></script>
+   </head>
+
+   <body>
+      <div style="background-color:rgba(103, 91, 152, 0.844);
+         background-color: transparent;
+         color:rgb(247, 242, 242);
+         text-align:center;
+         justify-content: center">
+         
+         <form action="register" method="post" class="SignUpPage">
+            <h2>SIGN UP</h2>
+            <div class="input-box">
+               <div class="input-feild">
+                  <input type="text" id="full_name" name="full_name" placeholder="Full Name" required>
+               </div>
+               <i class="fa-solid fa-user"></i>
+
+               <div class="input-feild">
+                  <input type="text" id="username" name="username" placeholder="Username" required>
+               </div>
+               <i class="fa-solid fa-user"></i>
+
+               <div class="input-feild">
+                  <input type="email" id="email" name="email" placeholder="Email" required>
+               </div>
+               <i class="fa-solid fa-envelope"></i>
+
+               <div class="input-feild">
+                  <input type="number" id="phone" name="phone" placeholder="Phone Number" required>
+               </div>
+               <i class="fa-solid fa-phone"></i>
+
+               <div class="input-feild">
+                  <input type="password" id="password" name="password" placeholder="Password" required>
+               </div>
+               <i class="fa-solid fa-lock"></i>
+
+               <div class="input-feild">
+                  <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password" required>
+               </div>
+               <i class="fa-solid fa-lock"></i>
+
+               <div class="hero">
+                  <label>Gender:</label>
+                  <input type="radio" id="male" name="gender" value="male"> Male
+                  <input type="radio" id="female" name="gender" value="female"> Female
+               </div>
+
+               <div class="hero">
+                  <label for="role">Role:</label>
+                  <select id="role" name="role">
+                     <option value="">Select Role</option>
+                     <option value="parent">Parent</option>
+                     <option value="student">Student</option>
+                     <option value="teacher">Teacher</option>
+                  </select>
+               </div>
+            </div>
+            <br>
+            <button type="submit">CREATE</button>
+         </form>
+      </div>
+   </body>
+</html>

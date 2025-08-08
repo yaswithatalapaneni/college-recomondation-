@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>College Finder - Home</title>
+    <link rel="stylesheet" href="style3.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="index.html" >Login</a></li>
+                <li><a href="index2.html" >Sign Up</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   
+    <section class="hero">
+        <h1>Find Your Perfect College</h1>
+        <p>Discover the best colleges, courses, and scholarships tailored to your aspirations</p>
+        <div class="search-container">
+            <input type="text" placeholder="Search for colleges, courses, or scholarships..." />
+            <button class="animated-btn"> Search</button>
+        </div>
+    </section>
+   
+    <section class="feature">
+        <h1>College Predictor</h1>
+        <p>Estimate your admission chances based on your scores, preferences, and historical data.</p>
+        <div class="con"> 
+            <button class="animated-btn" onclick="window.location.href='Finder.html'">Try Now</button>
+            
+        </div>
+    </section>
+    
+    <section class="dashboard">
+        <h2>Explore Your Options</h2>
+        <div class="cards">
+            <div class="card glow-card">
+                <div class="icon"><i class="fas fa-university" style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;"></i></div>
+                <h3>Colleges</h3>
+                <p>Explore a list of top colleges based on rankings, facilities, and student reviews.</p>
+                <button class="animated-btn">View Colleges</button>
+            </div>
+            <div class="card glow-card">
+                <div class="icon"><i class="fas fa-graduation-cap" style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;"></i></div>
+                <h3>Streams</h3>
+                <p>Discover academic streams that align with your career goals and interests.</p>
+                <button class="animated-btn">View Streams</button>
+            </div>
+            <div class="card glow-card">
+                <div class="icon"><i class="fas fa-award" style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;"></i></div>
+                <h3>Scholarships</h3>
+                <p>Find and apply for scholarships that match your qualifications and needs.</p>
+                <button class="animated-btn">View Scholarships</button>
+            </div>
+        </div>
+    </section>
+
+   
+    <section class="streams">
+        <h2>Popular Academic Streams</h2>
+        <div class="blocks">
+            <div class="block">
+                <i class="fas fa-cogs" style="font-size: 2.5rem; margin-bottom: 1rem;"></i>
+                <h3>Engineering</h3>
+                <p>Discover top engineering colleges and specialized courses.</p>
+            </div>
+            <div class="block">
+                <i class="fas fa-user-md" style="font-size: 2.5rem; margin-bottom: 1rem;"></i>
+                <h3>Medical</h3>
+                <p>Explore leading medical institutions and healthcare programs.</p>
+            </div>
+            <div class="block">
+                <i class="fas fa-paint-brush" style="font-size: 2.5rem; margin-bottom: 1rem;"></i>
+                <h3>Arts</h3>
+                <p>Find excellent arts, humanities, and creative programs.</p>
+            </div>
+        </div>
+    </section>
+
+  
+    <section class="tools">
+        <div class="features">
+            <div class="feature">
+                <i class="fas fa-tasks" style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;"></i>
+                <h2>Application Tracker</h2>
+                <p>Track the status of all your college applications in one place with real-time updates.</p>
+                <button class="animated-btn" onclick="window.location.href='app-tracker.jsp'">Get Started</button>
+            </div>
+           
+            <div class="feature">
+                <i class="fas fa-lightbulb" style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;"></i>
+                <h2>Personalized Recommendations</h2>
+                <p>Receive customized college suggestions based on your academic profile and goals.</p>
+                <button class="animated-btn">Get Recommendations</button>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="exams">
+        <h2>Upcoming Entrance Exams</h2>
+        <ul class="exam-list">
+            <li>JEE Main - Engineering Entrance Exam</li>
+            <li>NEET - National Eligibility cum Entrance Test</li>
+            <li>CLAT - Common Law Admission Test</li>
+            <li>CAT - Common Admission Test (MBA)</li>
+            <li>UPSC - Civil Services Examination</li>
+        </ul>
+    </section>
+
+    <section class="contact">
+        <h2>Have Questions?</h2>
+        <p>We're here to help you with your college search journey. Reach out to our team for personalized assistance.</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Your name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Your email address">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required placeholder="How can we help you?"></textarea>
+
+            <button type="submit" class="animated-btn">Send Message</button>
+        </form>
+    </section>
+    
+    <section id="about" class="about-section">
+        <div class="container" style="display: flex; flex-wrap: wrap; align-items: center; gap: 2rem; padding: 3rem 1rem;">
+            <div style="flex: 1 1 300px; text-align: center;">
+                <img src="https://img.freepik.com/free-vector/college-admission-concept-illustration_114360-8206.jpg" alt="About CollegeFinder" style="max-width: 100%; border-radius: 1rem; box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);" />
+            </div>
+            <div style="flex: 1 1 400px;">
+                <h2 style="font-size: 2rem; font-weight: 600; margin-bottom: 1rem;">About <span style="color: var(--primary);">CollegeFinder</span></h2>
+                <p style="font-size: 1.1rem; margin-bottom: 1rem; line-height: 1.6;">
+                    CollegeFinder is your smart guide to navigating the complex world of college admissions.
+                    With real-time data, curated resources, and a personalized experience, we help you discover:
+                </p>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 0.5rem;"><i class="fas fa-check-circle" style="color: var(--success); margin-right: 0.5rem;"></i>Top colleges matching your preferences</li>
+                    <li style="margin-bottom: 0.5rem;"><i class="fas fa-check-circle" style="color: var(--success); margin-right: 0.5rem;"></i>Courses aligned with your career goals</li>
+                    <li style="margin-bottom: 0.5rem;"><i class="fas fa-check-circle" style="color: var(--success); margin-right: 0.5rem;"></i>Scholarship opportunities and more</li>
+                </ul>
+                <p style="margin-top: 1rem;">
+                    Whether you're just starting out or narrowing down your final choices, CollegeFinder is here to help you every step of the way.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p>&copy; 2025 College Finder. All Rights Reserved.</p>
+        <p>Empowering students to find their perfect educational path.</p>
+    </footer>
+
+    <script>
+       
+        document.querySelectorAll('.animated-btn').forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+             
+                const ripple = document.createElement('span');
+                ripple.classList.add('ripple');
+                this.appendChild(ripple);
+                
+              
+                const x = e.clientX - e.target.getBoundingClientRect().left;
+                const y = e.clientY - e.target.getBoundingClientRect().top;
+                
+              
+                ripple.style.left = `${x}px`;
+                ripple.style.top = `${y}px`;
+                  
+                setTimeout(() => {
+                    ripple.remove();
+                }, 1000);
+            });
+        });
+
+    
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
